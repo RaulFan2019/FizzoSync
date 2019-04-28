@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/TitleLayout">
+
+        <TextView
+            style="@style/TitleTitleTv"
+            android:text="@string/title_select_coach" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <cn.fizzo.fizzosync.ui.widget.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/ptr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/include_refresh_head" />
+
+            <cn.fizzo.fizzosync.ui.widget.pulltorefresh.PullableListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:listSelector="?android:attr/selectableItemBackground" />
+
+            <include layout="@layout/include_refresh_load_more" />
+
+        </cn.fizzo.fizzosync.ui.widget.pulltorefresh.PullToRefreshLayout>
+
+
+        <cn.fizzo.fizzosync.ui.widget.common.MyLoadingView
+            android:id="@+id/v_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:text="找不到我？"
+            android:textSize="9.8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_mostly"
+            android:text="请联系附近工作人员"
+            android:textSize="9.8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

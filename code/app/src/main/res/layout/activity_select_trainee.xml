@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/TitleLayout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/TitleBackButton" />
+
+        <TextView
+            style="@style/TitleTitleTv"
+            android:text="@string/title_select_trainee" />
+
+        <LinearLayout style="@style/TitleRightBtnLy">
+
+            <TextView
+                android:id="@+id/btn_all_select"
+                style="@style/TitleRightButton"
+                android:text="@string/action_all_select" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <cn.fizzo.fizzosync.ui.widget.pulltorefresh.PullToRefreshLayout
+                android:id="@+id/ptr"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <include layout="@layout/include_refresh_head" />
+
+                <cn.fizzo.fizzosync.ui.widget.pulltorefresh.PullableListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:divider="@null"
+                    android:listSelector="?android:attr/selectableItemBackground" />
+
+                <include layout="@layout/include_refresh_load_more" />
+
+            </cn.fizzo.fizzosync.ui.widget.pulltorefresh.PullToRefreshLayout>
+
+            <Button
+                android:id="@+id/btn_sync"
+                style="@style/BtnBigAccent"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/action_sync" />
+
+        </LinearLayout>
+
+        <cn.fizzo.fizzosync.ui.widget.common.MyLoadingView
+            android:id="@+id/v_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

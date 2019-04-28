@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_base_gray">
+
+    <!-- title -->
+    <RelativeLayout style="@style/TitleLayout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/TitleBackButton" />
+
+        <TextView
+            style="@style/TitleTitleTv"
+            android:text="@string/title_select_trainee" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_mostly"
+        android:layout_marginTop="67dp"
+        android:textSize="16.7dp"
+        android:text="恭喜，同步完成！"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_secondly"
+        android:textSize="12.7dp"
+        android:layout_marginTop="13dp"
+        android:text="请等待手环电量充足后使用"/>
+
+    <View
+        android:layout_width="154dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_complete"/>
+
+</LinearLayout>

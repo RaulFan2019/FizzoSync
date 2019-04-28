@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 主题色 -->
+    <color name="primary">#343339</color>
+    <color name="primaryDark">#343339</color>
+    <color name="accent">#ff4612</color>
+
+    <color name="bg_welcome">#f8f9fb</color>
+
+    <!-- 主要文字 -->
+    <color name="tv_mostly">#323333</color>
+    <!-- 辅助文字 -->
+    <color name="tv_secondly">#777777</color>
+
+    <color name="bg_divider">#DADADA</color>
+    <color name="bg_base_gray">#F5F5F5</color>
+</resources>

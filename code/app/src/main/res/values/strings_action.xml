@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="action_back">返回</string>
+
+    <string name="action_all_select">全选</string>
+    <string name="action_sync">开始同步</string>
+    <string name="action_stop">暂停同步</string>
+</resources>

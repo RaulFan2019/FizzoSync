@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_select_coach">我是教练</string>
+    <string name="title_select_trainee">同步选择</string>
+    <string name="title_sync">同步中</string>
+</resources>
